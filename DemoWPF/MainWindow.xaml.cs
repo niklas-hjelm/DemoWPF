@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
 
 namespace DemoWPF
 {
@@ -14,18 +15,29 @@ namespace DemoWPF
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ShowTextButton_Click(object sender, RoutedEventArgs e)
         {
-            if(e.Source is Button btn)
-            {
-                if(btn.Content != null)
-                    MinText.Text = btn.Content.ToString();
-            }
-            else
-            {
+            MinText.Text = Input.Text;
+        }
 
-                MinText.Text = Input.Text;
-            }
+        private void EnlargeTextButton_Click(object sender, RoutedEventArgs e)
+        {
+            MinText.FontSize += 10;
+        }
+
+        private void ShrinkTextButton_Click(object sender, RoutedEventArgs e)
+        {
+            MinText.FontSize -= 10;
+        }
+
+        private void ChangeToConsolas_Click(object sender, RoutedEventArgs e)
+        {
+            MinText.FontFamily = new FontFamily("Consolas");
+        }
+
+        private void ChangeToComicSans_Click(object sender, RoutedEventArgs e)
+        {
+            MinText.FontFamily = new FontFamily("Comic Sans MS");
         }
     }
 }
