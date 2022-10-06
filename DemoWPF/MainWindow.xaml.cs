@@ -33,7 +33,15 @@ namespace DemoWPF
 
         private void SumButton_Click(object sender, RoutedEventArgs e)
         {
-            throw new System.NotImplementedException();
+            var expression = MinText.Text;
+
+            var numbers = expression.Split('+');
+            var num1 = int.Parse(numbers[0]);
+            var num2 = int.Parse(numbers[1]);
+
+            var sum = num1 + num2;
+
+            MinText.Text = $"{sum}";
         }
     }
 }
