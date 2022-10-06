@@ -15,34 +15,20 @@ namespace DemoWPF
 
         }
 
-        private void ShowTextButton_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MinText.Text += Input.Text;
+            if (e.Source is Button button)
+            {
+                MinText.Text += button.Content;
+            }
         }
 
-        private void EnlargeTextButton_Click(object sender, RoutedEventArgs e)
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
-            MinText.FontSize += 10;
-        }
-
-        private void ShrinkTextButton_Click(object sender, RoutedEventArgs e)
-        {
-            MinText.FontSize -= 10;
-        }
-
-        private void ChangeToConsolas_Click(object sender, RoutedEventArgs e)
-        {
-            MinText.FontFamily = new FontFamily("Consolas");
-        }
-
-        private void ChangeToComicSans_Click(object sender, RoutedEventArgs e)
-        {
-            MinText.FontFamily = new FontFamily("Comic Sans MS");
-        }
-
-        private void One_Click(object sender, RoutedEventArgs e)
-        {
-            MinText.Text += "1";
+            if (e.Source is Button button)
+            {
+                MinText.Text = "";
+            }
         }
     }
 }

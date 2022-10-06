@@ -24,41 +24,82 @@
         </Grid.ColumnDefinitions>
         <TextBlock
             x:Name="MinText"
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="4"
             HorizontalAlignment="Stretch"
-            FontSize="36">
-            Hello
-        </TextBlock>
-        <StackPanel Grid.Row="0" Grid.Column="3">
-            <Button Click="EnlargeTextButton_Click" Content="Bigger" />
-            <Button Click="ShrinkTextButton_Click" Content="Smaller" />
-        </StackPanel>
+            FontSize="36" />
+
         <Button
             Grid.Row="1"
             Grid.Column="0"
-            Click="ChangeToConsolas_Click"
-            FontFamily="Consolas">
-            Consolas
-        </Button>
-        <Button Grid.Row="2" Click="One_Click"></Button>
+            Click="Button_Click"
+            Content="1"
+            FontSize="40" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="0"
+            Click="Button_Click"
+            Content="4"
+            FontSize="40" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="0"
+            Click="Button_Click"
+            Content="7"
+            FontSize="40" />
         <Button
             Grid.Row="1"
             Grid.Column="1"
-            Click="ChangeToComicSans_Click"
-            FontFamily="Comic Sans MS">
-            ComicSans
-        </Button>
+            Click="Button_Click"
+            Content="2"
+            FontSize="40" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+            Click="Button_Click"
+            Content="5"
+            FontSize="40" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Click="Button_Click"
+            Content="8"
+            FontSize="40" />
+        <Button
+            Grid.Row="1"
+            Grid.Column="2"
+            Click="Button_Click"
+            Content="3"
+            FontSize="40" />
         <Button
             Grid.Row="2"
             Grid.Column="2"
-            Click="ShowTextButton_Click"
-            Content="Visa" />
-        <TextBox
-            x:Name="Input"
+            Click="Button_Click"
+            Content="6"
+            FontSize="40" />
+        <Button
             Grid.Row="3"
-            Grid.Column="0"
-            Grid.ColumnSpan="4"
-            Background="Bisque"
-            FontSize="36" />
+            Grid.Column="2"
+            Click="Button_Click"
+            Content="9"
+            FontSize="40" />
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Click="Button_Click"
+            Content="0"
+            FontSize="40" />
+        <Button
+            Grid.Row="2"
+            Grid.Column="3"
+            Click="Button_Click"
+            Content="+"
+            FontSize="40" />
+        <Button
+            Name="Clear"
+            Grid.Row="1"
+            Grid.Column="3"
+            Click="ClearButton_Click"
+            Content="Clear"
+            FontSize="40" />
     </Grid>
 </Window>
