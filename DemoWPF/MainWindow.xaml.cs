@@ -30,5 +30,10 @@ namespace DemoWPF
                 MinText.Text = "";
             }
         }
+
+        private void SumButton_Click(object sender, RoutedEventArgs e)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
