@@ -40,6 +40,7 @@
             FontFamily="Consolas">
             Consolas
         </Button>
+        <Button Grid.Row="2" Click="One_Click"></Button>
         <Button
             Grid.Row="1"
             Grid.Column="1"

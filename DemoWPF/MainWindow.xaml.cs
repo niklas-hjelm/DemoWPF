@@ -17,7 +17,7 @@ namespace DemoWPF
 
         private void ShowTextButton_Click(object sender, RoutedEventArgs e)
         {
-            MinText.Text = Input.Text;
+            MinText.Text += Input.Text;
         }
 
         private void EnlargeTextButton_Click(object sender, RoutedEventArgs e)
@@ -38,6 +38,11 @@ namespace DemoWPF
         private void ChangeToComicSans_Click(object sender, RoutedEventArgs e)
         {
             MinText.FontFamily = new FontFamily("Comic Sans MS");
+        }
+
+        private void One_Click(object sender, RoutedEventArgs e)
+        {
+            MinText.Text += "1";
         }
     }
 }
